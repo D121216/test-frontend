@@ -26,9 +26,10 @@ const YourChoose = () => {
         your choose.
       </h1>
       <div className="mt-4 flex flex-col md:flex-row gap-5">
-        {yourChooseList.map((yourchoose: any) => {
+        {yourChooseList.map((yourchoose: any, index: number) => {
           return (
             <YourChooseItem
+              key={index}
               image={yourchoose.image}
               name={yourchoose.name}
               des={yourchoose.des}
